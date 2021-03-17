@@ -39,10 +39,10 @@
                      >
                   </li>
                   <li class="menu_item">
-                     <a href="#" class="menu_link">Требования</a>
+                     <a href="#req" class="menu_link">Требования</a>
                   </li>
                   <li class="menu_item">
-                     <a href="#" class="menu_link">Контакты</a>
+                     <a href="#cont" class="menu_link">Контакты</a>
                   </li>
                   <li class="menu_item">
                      <a href="#" class="menu_link">Оставить заявку</a>
@@ -384,7 +384,7 @@
                </div>
                <div class="col-md-6">
                   <div class="require_block require_block_nmb warning">
-                     <div class="require_title">ТРЕБОВАНИЕ:</div>
+                     <div id="req" class="require_title">ТРЕБОВАНИЕ:</div>
                      <ul class="require_list">
                         <li>Наличие автомобиля без рекламы</li>
                         <li>
@@ -466,7 +466,7 @@
                </div>
             </div>
             <div>
-               <div class="footer_mobile">
+               <div id="cont" class="footer_mobile">
                   <a href="#">
                      <img src="img/app_store.png" alt="App Store" />
                   </a>
@@ -480,6 +480,35 @@
             </div>
          </div>
       </footer>
+
+      <div class="modal hide">
+         <div class="modal__dialog">
+            <div class="modal__content">
+               <form action="#">
+                  <div data-close class="modal__close">&times;</div>
+                  <div class="modal__title">
+                     Оставте данные <br />
+                     и мы перезвоним Вам!
+                  </div>
+                  <input
+                     required
+                     placeholder="Ваше имя"
+                     name="name"
+                     type="text"
+                     class="modal__input"
+                  />
+                  <input
+                     required
+                     placeholder="Ваш номер телефона"
+                     name="phone"
+                     type="tel"
+                     class="modal__input"
+                  />
+                  <button class="btn btn_dark btn_min">Перезвонить мне</button>
+               </form>
+            </div>
+         </div>
+      </div>
 
       <script src="js/script.js"></script>
    </body>
